@@ -5,7 +5,7 @@ const services = [
   {
     icon: Palette,
     title: "Projektowanie UI/UX",
-    description: "Tworzymy intuicyjne interfejsy, które zachwycają użytkowników i konwertują odwiedzających w klientów.",
+    description: "Tworzymy nowoczesne i intuicyjne interfejsy, które budują pozytywne doświadczenia użytkowników i realnie zwiększają konwersję Twojego biznesu.",
   },
   {
     icon: Building2,
