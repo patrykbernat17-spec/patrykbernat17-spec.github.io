@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Deploy to GitHub Pages & Seohost FTP
 
 on:
   push:
@@ -32,6 +32,21 @@ jobs:
 
       - name: Build
         run: npm run build
+
+      # --- NOWY KROK: WYSYŁKA NA SEOHOST (FTP) ---
+      - name: 🚀 Deploy to Seohost (FTP)
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: h73.seohost.pl
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./dist/
+          server-dir: domains/fluxsite.pl/public_html/
+          protocol: ftp
+          exclude: |
+            **/.git*
+            **/.git*/**
+      # -------------------------------------------
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
