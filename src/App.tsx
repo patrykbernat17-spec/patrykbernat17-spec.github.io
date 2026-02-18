@@ -13,8 +13,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      {/* DODANO basename, aby router wiedział, że jest w podkatalogu */}
-      <BrowserRouter basename="/fluxsite.pl">
+      <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
