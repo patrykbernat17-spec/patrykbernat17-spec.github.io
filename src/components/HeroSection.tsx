@@ -31,7 +31,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-          className="mt-6 text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">Profesjonalne projektowanie i tworzenie stron internetowych dla firm. Jako agencja interaktywna dostarczamy szybkie, responsywne i zoptymalizowane pod SEO strony WWW, które skutecznie budują wizerunek Twojej marki w sieci..
+          className="mt-6 text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">Profesjonalne projektowanie i tworzenie stron internetowych dla firm. Jako agencja interaktywna dostarczamy szybkie, responsywne i zoptymalizowane pod SEO strony WWW, które skutecznie budują wizerunek Twojej marki w sieci.
 
 
         </motion.p>
